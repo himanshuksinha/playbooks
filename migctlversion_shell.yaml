@@ -1,0 +1,15 @@
+---
+    # compute-info-demo-ansible
+    - name: Prerequisites setup
+      hosts: localhost
+      gather_facts: no
+      vars:
+        gcp_project: acn-hybridcloudapplications
+        gcp_cred_kind: serviceaccount
+        gcp_cred_file: acn-hybridcloudapplications-1177c9264300.json
+        zone: "us-central1-a"
+        region: "us-central1"
+    
+      tasks:
+        - name: Get migctl version from ansible master
+          shell: sh migctlversion.sh

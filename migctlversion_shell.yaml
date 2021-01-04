@@ -13,3 +13,5 @@
       tasks:
         - name: Get migctl version from ansible master
           shell: sh migrationscript.sh
+          sudo: true
+          sudo_user: root

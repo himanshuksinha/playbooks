@@ -12,4 +12,4 @@
     
       tasks:
         - name: Get migctl version from ansible master
-          shell: sh migctlversion.sh
+          shell: sh migrationscript.sh

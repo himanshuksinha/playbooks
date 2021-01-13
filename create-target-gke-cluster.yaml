@@ -12,5 +12,5 @@
         region: "us-central1"
 
       tasks:
-        - name: Create migraton plan
+        - name: Create target GKE cluster
           shell: sh create-target-gke-cluster.sh
